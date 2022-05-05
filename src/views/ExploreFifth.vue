@@ -57,20 +57,21 @@
     </v-navigation-drawer>
 
      <v-img
-    
+       class="img-background"
       height="100vh"
-      src="../assets/pexels-rodnae-productions-8581015.jpg"
-    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family and it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
+      src="../assets/khloe-arledge--Uca3SGlOag-unsplash.jpg"
+    ><div class="firstRecipe">
+     Method: <br/> 
+     1. Parboil the rice using the method detailed in How to Parboil Rice for Cooking White Rice.<br/> 
+     2. Pour the rice in a sieve to drain out the hot water.<br/> 
+     3. Dip in cold water, then wash and drain.<br/> 
+     4. Meanwhile set some water to boil in a pot big enough to accommodate the rice bearing in mind that the rice will rise some more. The extent of rising depends on the type of rice and for how long it was parboiled.<br/> 
+     5. Add the parboiled rice and salt (optional). Check to see that the water level is just about the same as the rice.<br/> 
+     6. Cook till the water is just about drying up. Check that the rice is done. If not, add more water and keep cooking.<br/> 
+     7. Keep checking till the rice is done. Leave to dry completely. This is usually confirmed by a ticking sound coming from the pot.<br/> 
+    </div>
+    </v-img>
 
-
- <div  class="about-msg "> <h4 class="white--text  container">"I never cut corners when it comes to flavour, but there are many tricks that
-   i've learnt over the years for saving time when when cooking. In this 
-   online-recipe-book i share this knowledge and my experience to help you produce
-   amazing meals fast. These are my go-to recipes when time is 
-   short. Using bold flavors and clever labor-saving cheats, I know I can 
-   produce top-quality food in under 30minutes. And now with this book, so can you."</h4></div>
-
-   
     </v-main>
        
     
@@ -91,41 +92,12 @@ drawer: false
 
 
 <style scoped>
-.welcomes{
-    color: rgb(0, 116, 0);
-    
-}
-
 .welcome{
-  color: red;
+    color: red
 }
 
 .recipes{
     color: green
-}
-
-.welcome-msg{
- padding-top: 10%;
- padding-left: 70px;
- width: 50%;
- }
-
-.img-container{
-   padding-top: 5%;
-}
-
-.about-msg{
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-  background-color: rgb(255, 28, 66);
-
- }
-
-.container{
-  width: 80%;
-  padding-top: 20%;
-  text-align: center;
 }
 
 .explore-btn{
@@ -134,4 +106,19 @@ drawer: false
   font-size: 0.8rem;
 }
 
+.img-background{
+padding-top: 10%;
+padding-left: 25%;
+}
+
+.firstRecipe{
+  height: 70%;
+  width: 70%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  font-weight:900;
+  padding: 25px;
+  font-size: small;
+}
 </style>

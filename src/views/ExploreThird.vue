@@ -57,20 +57,26 @@
     </v-navigation-drawer>
 
      <v-img
-    
+     class="img-background"
       height="100vh"
-      src="../assets/pexels-rodnae-productions-8581015.jpg"
-    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family and it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
+      src="../assets/sam-moqadam-yxZSAjyToP4-unsplash.jpg"
+    ><div class="firstRecipe">
+     Method: <br/> 
+1. Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.<br/>
 
+2. Set aside for 30 mins to rest if you have time, or start cooking straight away.<br/>
 
- <div  class="about-msg "> <h4 class="white--text  container">"I never cut corners when it comes to flavour, but there are many tricks that
-   i've learnt over the years for saving time when when cooking. In this 
-   online-recipe-book i share this knowledge and my experience to help you produce
-   amazing meals fast. These are my go-to recipes when time is 
-   short. Using bold flavors and clever labor-saving cheats, I know I can 
-   produce top-quality food in under 30minutes. And now with this book, so can you."</h4></div>
+3. Set a medium frying pan or crêpe pan over a medium heat and carefully wipe it with some oiled kitchen paper.<br/>
 
-   
+4. When hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go. <br/>
+
+5. Serve with strawberry and blackberry dressing with syrup
+
+      </div>
+     
+     
+    </v-img>
+
     </v-main>
        
     
@@ -91,41 +97,12 @@ drawer: false
 
 
 <style scoped>
-.welcomes{
-    color: rgb(0, 116, 0);
-    
-}
-
 .welcome{
-  color: red;
+    color:red
 }
 
 .recipes{
     color: green
-}
-
-.welcome-msg{
- padding-top: 10%;
- padding-left: 70px;
- width: 50%;
- }
-
-.img-container{
-   padding-top: 5%;
-}
-
-.about-msg{
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-  background-color: rgb(255, 28, 66);
-
- }
-
-.container{
-  width: 80%;
-  padding-top: 20%;
-  text-align: center;
 }
 
 .explore-btn{
@@ -134,4 +111,19 @@ drawer: false
   font-size: 0.8rem;
 }
 
+.img-background{
+padding-top: 10%;
+padding-left: 25%;
+}
+
+.firstRecipe{
+  height: 70%;
+  width: 70%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  font-weight:900;
+  padding: 25px;
+  font-size: small;
+}
 </style>

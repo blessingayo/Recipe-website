@@ -57,20 +57,22 @@
     </v-navigation-drawer>
 
      <v-img
-    
+      class="img-background"
       height="100vh"
-      src="../assets/pexels-rodnae-productions-8581015.jpg"
-    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family and it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
+      src="../assets/mae-mu-en4qp-aK1h4-unsplash.jpg"
+    ><div class="firstRecipe">
+     Method: <br/> 
+1. Cook the egg with salt and red pepper flakes in butter until cooked through. <br/>
+    2. Flip the shrimp to the other side to finish cooking, then remove the shrimp and set aside.<br/>
+    3. Cook the remaining garlic and butter in the same skillet, along with the lemon juice, pasta water (reserved from cooking the pasta) and parmesan cheese. Use a whisk to combine the sauce and scrape up any bits from the shrimp.<br/>
+    4. Add in the cooked spaghetti on top of the sauce.<br/>
+    5. Toss to combine until the sauce coats the spaghetti well.<br/>
+    6. Return the egg to the skillet, and garnish with any other protein of your choice before serving.<br/>
+      </div>
+     
+     
+    </v-img>
 
-
- <div  class="about-msg "> <h4 class="white--text  container">"I never cut corners when it comes to flavour, but there are many tricks that
-   i've learnt over the years for saving time when when cooking. In this 
-   online-recipe-book i share this knowledge and my experience to help you produce
-   amazing meals fast. These are my go-to recipes when time is 
-   short. Using bold flavors and clever labor-saving cheats, I know I can 
-   produce top-quality food in under 30minutes. And now with this book, so can you."</h4></div>
-
-   
     </v-main>
        
     
@@ -91,41 +93,12 @@ drawer: false
 
 
 <style scoped>
-.welcomes{
-    color: rgb(0, 116, 0);
-    
-}
-
 .welcome{
-  color: red;
+    color:red
 }
 
 .recipes{
     color: green
-}
-
-.welcome-msg{
- padding-top: 10%;
- padding-left: 70px;
- width: 50%;
- }
-
-.img-container{
-   padding-top: 5%;
-}
-
-.about-msg{
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-  background-color: rgb(255, 28, 66);
-
- }
-
-.container{
-  width: 80%;
-  padding-top: 20%;
-  text-align: center;
 }
 
 .explore-btn{
@@ -134,4 +107,19 @@ drawer: false
   font-size: 0.8rem;
 }
 
+.img-background{
+padding-top: 10%;
+padding-left: 25%;
+}
+
+.firstRecipe{
+  height: 70%;
+  width: 70%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  font-weight:900;
+  padding: 25px;
+  font-size: small;
+}
 </style>

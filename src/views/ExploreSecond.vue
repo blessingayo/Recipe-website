@@ -57,20 +57,22 @@
     </v-navigation-drawer>
 
      <v-img
-    
+     class="img-background"
       height="100vh"
-      src="../assets/pexels-rodnae-productions-8581015.jpg"
-    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family and it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
+      src="../assets/alex-munsell-auIbTAcSH6E-unsplash.jpg"
+    ><div class="firstRecipe">
+     Method: <br/> 
+   1. In an oiled skillet over medium-high heat, sear the steak until cooked all the way through. Remove from the pan.<br/>
+2. Add a little more oil, then add the garlic and ginger to the pan. Sauté until soft.<br/>
+3. Add the sesame oil, soy sauce, brown sugar, honey, and beef broth. Stir until combined.<br/>
+4. Add the broccoli florets.<br/>
+5. In a separate bowl, combine cornstarch and water. Add to broccoli mixture. Bring to a boil, until sauce has thickened.<br/>
+6. Add the beef back into the mixture, and serve over rice with sesame seeds, if desired. Enjoy!<br/>
 
+      </div>
+     
+    </v-img>
 
- <div  class="about-msg "> <h4 class="white--text  container">"I never cut corners when it comes to flavour, but there are many tricks that
-   i've learnt over the years for saving time when when cooking. In this 
-   online-recipe-book i share this knowledge and my experience to help you produce
-   amazing meals fast. These are my go-to recipes when time is 
-   short. Using bold flavors and clever labor-saving cheats, I know I can 
-   produce top-quality food in under 30minutes. And now with this book, so can you."</h4></div>
-
-   
     </v-main>
        
     
@@ -79,7 +81,7 @@
 <script>
 
 export default {
-   name: 'ExploreThird',
+   name: 'ExploreSecond',
 
 data(){
     return{
@@ -91,41 +93,12 @@ drawer: false
 
 
 <style scoped>
-.welcomes{
-    color: rgb(0, 116, 0);
-    
-}
-
 .welcome{
-  color: red;
+    color:red
 }
 
 .recipes{
     color: green
-}
-
-.welcome-msg{
- padding-top: 10%;
- padding-left: 70px;
- width: 50%;
- }
-
-.img-container{
-   padding-top: 5%;
-}
-
-.about-msg{
-  height: 50%;
-  width: 60%;
-  margin: 0 auto;
-  background-color: rgb(255, 28, 66);
-
- }
-
-.container{
-  width: 80%;
-  padding-top: 20%;
-  text-align: center;
 }
 
 .explore-btn{
@@ -134,4 +107,21 @@ drawer: false
   font-size: 0.8rem;
 }
 
+.img-background{
+padding-top: 10%;
+padding-left: 25%;
+}
+
+.firstRecipe{
+  height: 70%;
+  width: 70%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  font-weight:900;
+  padding: 25px;
+  font-size: small;
+ 
+ 
+}
 </style>
