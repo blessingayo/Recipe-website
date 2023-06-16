@@ -260,6 +260,7 @@ export default {
   border-radius: 1rem;
   height: 100%;
   width: 50vw;
+  overflow-y : scroll;
 }
 
 .popup-content h2 {
