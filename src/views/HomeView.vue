@@ -111,6 +111,12 @@ data() {
   font-size:3rem;
 }
 
+@media only screen and (max-width : 600px) {
+  .welcome-msg{
+     padding-top: 90%;
+  }
+}
+
 .recipe{
   color: green;
 }

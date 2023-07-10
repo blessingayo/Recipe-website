@@ -60,7 +60,9 @@
      class="img-background"
       height="100vh"
       src="../assets/sam-moqadam-yxZSAjyToP4-unsplash.jpg"
-    ><div class="firstRecipe">
+    >
+        <div style="display: flex; justify-content: center; align-items: center; ">
+    <div class="firstRecipe">
      Method: <br/> 
 1. Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.<br/>
 
@@ -73,7 +75,7 @@
 5. Serve with strawberry and blackberry dressing with syrup
 
       </div>
-     
+    </div> 
      
     </v-img>
 
@@ -119,11 +121,23 @@ padding-left: 25%;
 .firstRecipe{
   height: 70%;
   width: 70%;
+  margin: 0 auto;
   background-color: white;
   opacity: 0.8;
   border-radius: 5%;
   font-weight:900;
   padding: 25px;
   font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstRecipe{
+    width: 100vw !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
 </style>

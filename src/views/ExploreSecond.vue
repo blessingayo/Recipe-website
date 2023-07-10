@@ -60,7 +60,9 @@
      class="img-background"
       height="100vh"
       src="../assets/alex-munsell-auIbTAcSH6E-unsplash.jpg"
-    ><div class="firstRecipe">
+    >
+        <div style="display: flex; justify-content: center; align-items: center; ">
+    <div class="firstRecipe">
      Method: <br/> 
    1. In an oiled skillet over medium-high heat, sear the steak until cooked all the way through. Remove from the pan.<br/>
 2. Add a little more oil, then add the garlic and ginger to the pan. Sauté until soft.<br/>
@@ -70,7 +72,7 @@
 6. Add the beef back into the mixture, and serve over rice with sesame seeds, if desired. Enjoy!<br/>
 
       </div>
-     
+    </div>
     </v-img>
 
     </v-main>
@@ -114,6 +116,8 @@ padding-left: 25%;
 
 .firstRecipe{
   height: 70%;
+    margin: 0 auto;
+
   width: 70%;
   background-color: white;
   opacity: 0.8;
@@ -121,7 +125,15 @@ padding-left: 25%;
   font-weight:900;
   padding: 25px;
   font-size: small;
- 
- 
+}
+
+@media only screen and (max-width: 600px) {
+  .firstRecipe{
+        width: 100vw !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

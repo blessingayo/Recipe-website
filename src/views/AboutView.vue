@@ -60,11 +60,11 @@
     
       height="100vh"
       src="../assets/pexels-rodnae-productions-8581015.jpg"
-    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family and it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
+    ><h3 class="welcomes welcome-msg text-uppercase" >It's all about making something that feeds your soul and family, it doesn't matter how we get there complicated or simple. <span class="recipes"></span></h3></v-img>
 
 
  <div  class="about-msg "> <h4 class="white--text  container">"I never cut corners when it comes to flavour, but there are many tricks that
-   i've learnt over the years for saving time when when cooking. In this 
+   i've learnt over the years for saving time when cooking. In this 
    online-recipe-book i share this knowledge and my experience to help you produce
    amazing meals fast. These are my go-to recipes when time is 
    short. Using bold flavors and clever labor-saving cheats, I know I can 
@@ -110,6 +110,15 @@ drawer: false
  width: 50%;
  }
 
+ @media only screen and (max-width: 600px){
+  .welcome-msg{
+    width: 100% !important;
+    margin-top: 40px;
+    padding-top: 100px !important;
+    padding-left: 10px !important;
+  }
+ }
+
 .img-container{
    padding-top: 5%;
 }
@@ -121,6 +130,13 @@ drawer: false
   background-color: rgb(255, 28, 66);
 
  }
+
+@media only screen and (max-width: 600px) {
+  .about-msg{
+    width: 90% !important;
+    height: 40% !important;
+  }
+}
 
 .container{
   width: 80%;

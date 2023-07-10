@@ -1,7 +1,8 @@
 <template>
 
     <div class="recipe">
-      <router-link to="/addRecipes"> Back</router-link>
+     <v-btn class="btn-newRecipe" style="margin-bottom: 30px"> <router-link to="/addRecipes" style="text-decoration: none; color: grey; "> Back</router-link></v-btn>
+  
       <h1>{{recipe.title }}</h1>
   <p class="desc">{{ recipe.description }}</p>
   <hr />
@@ -49,11 +50,17 @@ export default {
 
 <style scoped >
 
+
+back-btn{
+  margin-bottom: 20px;
+}
 .recipe{
   padding: 1rem;
   max-width: 768px;
   margin: 0 auto;
 }
+
+
 
 .desc{
   font-size: 1.125rem;
@@ -89,4 +96,6 @@ margin-bottom: 1rem;
   list-style-position: inside;
   border-bottom: 1px solid black ;
 }
+
+
 </style>
