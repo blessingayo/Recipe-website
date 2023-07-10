@@ -130,10 +130,7 @@ padding-left: 25%;
 @media only screen and (max-width: 600px) {
   .firstRecipe{
         width: 100vw !important;
-    /* text-align: center; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+   
   }
 }
 
