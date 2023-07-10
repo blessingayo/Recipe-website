@@ -263,6 +263,15 @@ export default {
   overflow-y : scroll;
 }
 
+@media only screen and (max-width: 600px) {
+  .add-recipe-popup .popup-content{
+    width: 80vw !important;
+     overflow : scroll;
+  }
+
+
+}
+
 .popup-content h2 {
   font-size: 1rem;
   margin-bottom: 1rem;

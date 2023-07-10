@@ -1,13 +1,13 @@
 <template>
     <v-app class="cardContainer">
-        <v-main  >
+        <v-main  >  
  <div class="cards">
           
   <div>
     <v-row>
     <v-col>
       <v-hover v-slot="{hover}" open-delay="200">
-    <v-card  max-width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}" >
+    <v-card class="eachCards"  width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}" >
     <v-img
       height="50vh"
       src="../assets/olayinka-babalola-r01ZopTiEV8-unsplash.jpg"
@@ -42,11 +42,7 @@
 <v-row>
     <v-col  >
       <v-hover v-slot="{hover}" open-delay="200">
-<v-card
-    
-    max-width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
-  
-  >
+<v-card class="eachCards" width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}">
     <v-img
       height="50vh"
       src="../assets/alex-munsell-auIbTAcSH6E-unsplash.jpg"
@@ -81,11 +77,7 @@
 <v-row>
     <v-col  >
       <v-hover v-slot="{hover}" open-delay="200">
-<v-card
-    
-    max-width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
-  
-  >
+<v-card class="eachCards" width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}">
     <v-img
       height="50vh"
       src="../assets/sam-moqadam-yxZSAjyToP4-unsplash.jpg"
@@ -125,7 +117,7 @@
     <v-row>
     <v-col  >
        <v-hover v-slot="{hover}" open-delay="200">
-    <v-card  max-width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}">
+    <v-card class="eachCards"  width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}">
     <v-img
       height="50vh"
       src="../assets/mae-mu-en4qp-aK1h4-unsplash.jpg"
@@ -158,9 +150,9 @@
 <v-row>
     <v-col  >
         <v-hover v-slot="{hover}" open-delay="200">
-<v-card
+<v-card class="eachCards"
     
-    max-width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
+    width="300" :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
   
   >
     <v-img
@@ -196,9 +188,9 @@
 <v-row>
     <v-col  >
       <v-hover v-slot="{hover}" open-delay="200">
-<v-card
+<v-card class="eachCards"
     
-    max-width="300"  :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
+    width="300"  :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}"
   
   >
     <v-img
@@ -231,11 +223,11 @@
 </div>
 
 <div class="addRecipe-btn">
-  <v-col>
+  <!-- <v-col> -->
        <v-hover v-slot="{hover}" open-delay="200">
-   <v-btn x-large :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}" dark class="green"><router-link class="addbtn" to="/addRecipes">Click here for more</router-link></v-btn>
+   <v-btn x-large :elevation="hover ? 16 : 2" :class="{'on-hover' : hover}" dark class="green g-btn"><router-link class="addbtn" to="/addRecipes">Click here for more</router-link></v-btn>
        </v-hover>
-</v-col>
+<!-- </v-col> -->
 </div>
         </v-main>
     </v-app>
@@ -266,13 +258,33 @@ return{
  
 }
 
+@media only screen and (max-width : 600px) {
+  .cards{
+     flex-direction: column !important;
+  }
 
+   .second-cards{
+     flex-direction: column !important;
+     column-gap: 30px;
+  }
 
-  /* .cardContainer:hover::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      } */
+  .row{
+    margin: -1px;
+  }
 
+  .addRecipe-btn{
+        padding-top: 5%;
+    /* width: 97%; */
+    margin: 0 auto;
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex;
+  }
+
+   .eachCards{
+      width: 100% !important;
+    }
+}
 
 .cards{
   width: 85%;
@@ -281,7 +293,6 @@ return{
   justify-content: space-evenly;
   
 }
-
 
 .second-cards{
   width: 85%;
@@ -302,6 +313,19 @@ color:white;
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .addRecipe-btn > .g-btn{
+   padding-top: 5%;
+    /* width:  100% !important; */
+    text-align: center !important;
+    display: flex;
+    justify-self: start;
+    justify-content: center;
+    
+
+}
+
+}
 .addbtn{
   text-decoration: none;
   color: white;
